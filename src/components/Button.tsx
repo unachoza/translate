@@ -5,10 +5,24 @@ import LanguageContext from '../contexts/LanguageContexts'
     static contextType = LanguageContext
 
      render(){
-         console.log(this.context)
+
+         const text = (this.context) ; {
+            switch( this.context ){
+                case "english":
+                   return "Submit" 
+                case "spanish":
+                   return 'Enviar'
+                case "swedish":
+                   return 'Lämna'
+                case "french":
+                   return 'Soumettre'
+            }
+            console.log(text)
+         }
+         
          return (
              <div className=" ui button primary">
-                Submit
+                {text(this.context)}  
              </div>
          )
      }
