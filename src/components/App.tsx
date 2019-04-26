@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import UserCreate from './UserCreate';
 
 
 interface MyState {
@@ -15,11 +16,15 @@ class App extends Component<MyState>{
         return(
             <div className="ui container">
                 <div>
-                    Select a language:
-                    <i className="flag us" onClick={() => this.onLanguageChange('english')}/>
-                    <i className="flag nl" onClick={() => this.onLanguageChange('dutch')}/>
+                    Select a language :
+                    <br></br>  
+                    <i className="flag us" onClick={() => this.onLanguageChange('English')}/>
+                    <i className="flag fr" onClick={() => this.onLanguageChange('French')}/>
+                    <i className="flag es" onClick={() => this.onLanguageChange('Spanish')}/>
+                    <i className="flag se" onClick={() => this.onLanguageChange('Swedish')}/>
                 </div>
-                {this.state.language}
+                Current Language: {this.state.language}
+                <UserCreate />
             </div>
         )
     }
