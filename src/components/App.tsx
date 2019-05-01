@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import UserCreate from './UserCreate';
+import LanguageContext from '../contexts/LanguageContexts'
+import ColorContext from '../contexts/ColorContext'
 
 
 interface MyState {
@@ -24,7 +26,11 @@ class App extends Component<MyState>{
                     <i className="flag se" onClick={() => this.onLanguageChange('Swedish')}/>
                 </div>
                 Current Language: {this.state.language}
-                <UserCreate />
+                <ColorContext.Provider value="purple">
+                    <LanguageContext.Provider value={this.state.language}>
+                        <UserCreate />
+                    </LanguageContext.Provider>
+                </ColorContext.Provider>
             </div>
         )
     }
