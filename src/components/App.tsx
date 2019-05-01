@@ -21,9 +21,7 @@ class App extends Component<MyState>{
                     Select a language :
                     <br></br>  
                     <i className="flag us" onClick={() => this.onLanguageChange('English')}/>
-                    <i className="flag fr" onClick={() => this.onLanguageChange('French')}/>
                     <i className="flag es" onClick={() => this.onLanguageChange('Spanish')}/>
-                    <i className="flag se" onClick={() => this.onLanguageChange('Swedish')}/>
                 </div>
                 Current Language: {this.state.language}
                 <ColorContext.Provider value="purple">
