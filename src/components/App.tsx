@@ -9,7 +9,7 @@ interface State {
 }
 
 class App extends Component<{}, State>{
-       state = { language: 'english'} 
+       state = { language: 'English'} 
     
     
 
