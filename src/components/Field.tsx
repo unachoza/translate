@@ -9,7 +9,7 @@ class Field extends Component{
 
         console.log('from field',text)
         return (
-            <div className="ui field">
+            <div className="ui form">
                 <label>{text}</label>
                 <input />
             </div>

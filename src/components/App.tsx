@@ -4,12 +4,14 @@ import LanguageContext from '../contexts/LanguageContexts'
 import ColorContext from '../contexts/ColorContext'
 
 
-interface MyState {
-    language?: string
+interface State {
+    language: string
 }
 
-class App extends Component<MyState>{
-    state = { language: 'english'}
+class App extends Component<{}, State>{
+       state = { language: 'english'} 
+    
+    
 
     onLanguageChange = (language: string) => {
         this.setState({language})

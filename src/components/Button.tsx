@@ -20,7 +20,7 @@ import ColorContext from '../contexts/ColorContext'
          
          return (
             <ColorContext.Consumer>
-               { color => this.renderButton(color)}
+               { color => this.renderButton("color")}
              </ColorContext.Consumer>  
          )
      }
