@@ -3,15 +3,12 @@ import UserCreate from './UserCreate';
 import LanguageContext from '../contexts/LanguageContexts'
 import ColorContext from '../contexts/ColorContext'
 
-
 interface State {
     language: string
 }
 
 class App extends Component<{}, State>{
        state = { language: 'English'} 
-    
-    
 
     onLanguageChange = (language: string) => {
         this.setState({language})

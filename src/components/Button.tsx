@@ -7,7 +7,7 @@ import ColorContext from '../contexts/ColorContext'
 
    renderButton(color: string){
       return(
-         <button className={`ui button ${color}`}>
+         <button className={`ui button primary ${color}`}>
             <LanguageContext.Consumer>
                {value => value === "English" ? "Submit" : "Enviar" }
             </LanguageContext.Consumer>
