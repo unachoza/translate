@@ -7,7 +7,6 @@ class Field extends Component{
 
 
     render(){
-    const text:string = this.context 
 
         return (
             <div className="ui form">
