@@ -8,7 +8,6 @@ const UserCreate = () => {
         <div>
             <Field />
             <Button/>
-
         </div>
     )
 }

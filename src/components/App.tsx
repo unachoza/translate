@@ -13,7 +13,7 @@ class App extends Component<{}, State>{
     onLanguageChange = (language: string) => {
         this.setState({language})
     }
-       render(){
+    render(){
         return(
             <div className="ui container">
                 <div>
